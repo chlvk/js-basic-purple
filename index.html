@@ -5,10 +5,80 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/app.js" defer></script>
 </head>
 
 <body>
-  <img src="0_o.png" alt="Опаньки">
+  <div class="app">
+    <aside class="panel">
+      <img class="panel__logo" src="images/logo.svg" alt="Логотип приложения Habbit">
+      <nav class="panel__nav menu">
+        <ul class="menu__list list-reset">
+          <li class="menu__item">
+            <button class="menu__button menu__button_active btn-reset">
+              <img src="images/fitness.svg" alt="Fitness">
+            </button>
+          </li>
+          <li class="menu__item">
+            <button class="menu__button btn-reset">
+              <img src="images/waterbottle.svg" alt="Water">
+            </button>
+          </li>
+          <li class="menu__item">
+            <button class="menu__button btn-reset">
+              <img src="images/meal.svg" alt="Food">
+            </button>
+          </li>
+        </ul>
+      </nav>
+      <button class="menu__add btn-reset">
+        <img src="images/add.svg" alt="Add">
+      </button>
+    </aside>
+    <section class="content">
+      <header class="header">
+        <h1 class="header__title">Отжимания</h1>
+        <div class="progress">
+          <div class="progress__text">
+            <span class="progress__text-name">Прогресс</span>
+            <span class="progress__text-percent">80%</span>
+          </div>
+          <div class="progress__bar">
+            <div class="progress__bar-cover"></div>
+          </div>
+        </div>
+      </header>
+      <main>
+        <ul class="habbits list-reset">
+          <li class="habbits__item">
+            <div class="habbits__item-day">День 1</div>
+            <div class="habbits__item-desc">
+              <p class="habbits__item-text">Первый подход всегда даётся тяжело</p>
+              <button class="habbits__item-delete btn-reset">
+                <img src="images/bucket.svg" alt="Delete item">
+              </button>
+            </div>
+          </li>
+          <li class="habbits__item">
+            <div class="habbits__item-day">День 2</div>
+            <div class="habbits__item-desc">
+              <form class="habbits__item-form" action="">
+                <input type="text" class="habbits__item-input" placeholder="Комментарий">
+                <button class="habbits__item-btn btn-reset">Готово</button>
+              </form>
+            </div>
+          </li>
+        </ul>
+
+      </main>
+    </section>
+  </div>
+
+
 
 </body>
 
