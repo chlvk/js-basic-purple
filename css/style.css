@@ -48,12 +48,12 @@ body {
   font-weight: 500;
   font-style: normal;
   line-height: 1;
-  background-color: #f3f6fd;
 }
 
 .app {
   display: flex;
   width: 1120px;
+  background-color: #f3f6fd;
 }
 
 .panel {
@@ -116,7 +116,7 @@ body {
 }
 
 .content {
-  padding-inline: 41px 0;
+  padding-inline: 41px;
   padding-block: 45px;
   flex-grow: 1;
 }
@@ -254,8 +254,11 @@ body {
 .habbits__item-btn {
   min-width: 120px;
   font-size: 14px;
-  align-self: stretch;
   color: #5051f9;
   background-color: #edecfe;
   border-radius: 9px;
+}
+
+.habbits__item-btn:hover {
+  filter: brightness(0.95);
 }
